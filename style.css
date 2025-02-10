@@ -467,7 +467,7 @@ main{
 }
 .rate{
     border-top: 1px solid #e6e6e6e6;
-    padding: 12px;
+    padding: 12px 12px 11px;
     display: block;
 }
 .rate-con{
@@ -573,16 +573,16 @@ main{
     text-overflow: ellipsis;
     white-space: nowrap;
     word-wrap: normal;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 .cities{
-    padding: 36px 16px 24px;
+    padding: 45px 16px 16px;
     display: block;
     text-align: center;
 }
 .city-head{
     display:block;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 .city-head h2{
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -610,6 +610,41 @@ footer{
     padding: 48px 24px;
     background-color: rgba(247, 247, 247, 1);
     display: block;
+}
+.footer-content{
+    display: none;
+    margin-inline:-12px;
+    grid-template-columns:repeat(4,1fr)
+}
+.f-content{
+    margin-inline: 12px 12px;
+    display: block;
+    flex: 1;
+}
+.f-c-head{
+    margin-bottom: 12px;
+    font-family:'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    color: rgba(45, 46, 47, 1);
+    text-align: left;
+}
+.f-c-list{
+    display: block;
+    /* margin-bottom: 8px; */
+}
+.f-c-list a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: rgba(107, 109, 111, 1);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 8px;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 .lan-cit-con{
     display: block;
@@ -755,4 +790,50 @@ footer{
         margin-bottom: 5px;
     }
     
+}
+@media screen and (min-width:768px){
+    .rate{
+        padding-bottom: 12px;
+    }
+    .rating-head h2{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+    .rating-img{
+        margin-block: 7px;
+    }
+    .rating-btn button span{
+        margin-top: 1px;
+    }
+    .cities{
+        padding-top: 48px;
+    }
+    .city-head{
+        margin-bottom: 16px;
+    }
+    .about{
+        display: none;
+    }
+    footer{
+        padding:64px 32px;
+    }
+    .footer-content{
+        display:grid;
+    }
+    .copyright{
+        margin-top: 27px;
+    }
+    .add-space{
+        margin-top: 48px;
+    }
+    .add{
+        margin-top: 48px;
+    }
+    .lan-cit-con{
+        margin-inline: 12px;
+    }
+    .lan-cit-main{
+        display: none;
+    }
 }
