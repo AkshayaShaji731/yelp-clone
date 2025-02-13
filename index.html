@@ -8,8 +8,9 @@
     <link rel="shortcut icon" href="" type="image/x-icon" />
 </head>
 <body>
-    <!-- header -->
-    <div class="wrapper">
+   <div class="mobile">
+     <!-- header -->
+     <div class="wrapper">
         <div class="header">
             <div class="header-main">   
                 <div class="open">
@@ -36,7 +37,8 @@
                         <svg width="18" height="18" class="icon_svg"><path d="M15.913 14.224a1.324 1.324 0 0 0-.3-.466h.009l-3.377-3.376a5.492 5.492 0 0 0 .802-2.857 5.523 5.523 0 1 0-5.522 5.52 5.491 5.491 0 0 0 2.856-.801l3.369 3.369.004.003c.132.131.293.231.471.298.143.053.296.086.458.086.727 0 1.317-.589 1.317-1.316 0-.163-.033-.317-.087-.46zM7.525 10.94a3.422 3.422 0 0 1-3.418-3.416 3.422 3.422 0 0 1 3.418-3.417 3.422 3.422 0 0 1 3.416 3.417 3.421 3.421 0 0 1-3.416 3.416z"></path></svg>
                     </span></label>
                     <div class="input-text">
-                        <div class="text-con"><span>e.g. tacos, Mel's</span></div>
+                        <!-- <div class="text-con"><span>e.g. tacos, Mel's</span></div> -->
+                              <div class="text-con"><input type="text" placeholder="e.g. tacos, Mel's"></div>
                     </div>
                    </div> 
                 </form>
@@ -366,5 +368,738 @@
                 and related marks are registered trademarks of Yelp. </p>
         </div>
       </footer> 
+   </div>
+   <div class="desktop">
+    <section class="home">
+        <div class="home-inner">
+            <div class="home-header">
+                <div class="h-header-top">
+                    <!-- <div class="h-header-logo"><span>Yelp</span></div> -->
+                    <div class="h-header-logo"><img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/2d2a7a4342fc/assets/img/brand/logo_desktop_white.svg" alt=""></div>
+                   <div class="h-search">
+                      <!-- <div class="s-input"><span>things to do, nail salons, plumbers</span></div> -->
+                      <!-- <div class="s-input"><span>Miami,FL</span></div> -->
+                       <div class="s-input"><input type="text" placeholder="things to do, nail salons, plumbers" size="0"></div>
+                       <div class="s-input"><input type="text" placeholder="Miami, FL" id="place"></div>
+    
+                      <button><svg width="24" height="24" class="icon_svg"><path d="m21.853 20.355-3.444-3.443a9.428 9.428 0 1 0-16.761-6.171 9.428 9.428 0 0 0 15.348 7.586l3.443 3.442a1 1 0 1 0 1.414-1.414ZM5.82 16.245a7.429 7.429 0 1 1 5.253 2.175 7.38 7.38 0 0 1-5.253-2.176Z"></path></svg></button>
+                   </div>  
+                    <div class="nav-btn-con">
+                        <div class="nav">
+                            <div class="nav-item1">
+                                <div class="nav-item1-inner">
+                                    <span class="nav-txt">Yelp for Business</span>
+                                    <svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="nav-item1-inner">
+                                    <span class="nav-txt">Write a Review</span>
+                                </div>
+                            </div>
+                            <div class="nav-item">
+                                <div class="nav-item1-inner">
+                                    <span class="nav-txt">Start a Project</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button id="btn-1">Log In</button>
+                            <button id="btn-2"> Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="header-nav">
+                        <p>Restaurants</p>
+                        <svg width="24" height="24" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                    </div>
+                    <div class="header-nav">
+                        <p>Home Services</p>
+                        <svg width="24" height="24" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                    </div>
+                    <div class="header-nav">
+                        <p>Auto Services</p>
+                        <svg width="24" height="24" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                    </div>
+                    <div class="header-nav">
+                        <p>More</p>
+                        <svg width="24" height="24" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="home-body">
+                <div class="home-content">
+                    <div class="slider">
+                        <div class="slider-bar">
+                          <button id="btn-active"></button> 
+                          <button></button>
+                          <button></button> 
+                        </div>
+                        <div class="play-btn">
+                            <span><svg width="16" height="16" class="icon_svg"><path d="M8 14.75A6.75 6.75 0 1 1 14.75 8 6.758 6.758 0 0 1 8 14.75Zm0-12A5.25 5.25 0 1 0 13.25 8 5.256 5.256 0 0 0 8 2.75Z"></path><path d="m10.506 7.603-3.5-2.674a.5.5 0 0 0-.804.397v5.348a.5.5 0 0 0 .804.397l3.5-2.674a.5.5 0 0 0 0-.794Z"></path></svg></span>
+                        </div>
+                    </div>
+                    <div class="h-content">
+                        <h1>Nothing like a new coat of paint</h1>
+                        <a href="#">
+                            <div class="h-c-btn">
+                                <span><svg width="24" height="24" class="icon_svg"><path d="m21.853 20.355-3.444-3.443a9.428 9.428 0 1 0-16.761-6.171 9.428 9.428 0 0 0 15.348 7.586l3.443 3.442a1 1 0 1 0 1.414-1.414ZM5.82 16.245a7.429 7.429 0 1 1 5.253 2.175 7.38 7.38 0 0 1-5.253-2.176Z"></path></svg></span>
+                            <span id="paint"><p>Painters</p></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="h-name">
+                    <span>Carlos' Painting & Handyman</span>
+                    <p>Photo by <span>Ginger C.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="activity">
+        <div class="activity-head"><h2>Recent Activity</h2></div>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/s5hXvUFCY1IN9zkdo4X0Ug/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Alexandria T.Wrote a Review</p>
+                                <p class="txt-2">10 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/9cLxtaPxSAQyL-TizO4K4g/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">Monty's Sunset - South Beach</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                When I lived in Miami many years ago, we were on a budget and loved going yo happy hour. I remember ordering from raw bar and that their nachos were huge and filling. The sunset views on the marina were to die for!
+                                On a recent trip, I couldn't figure out where to go that wasn't too fancy but would have good food and decided to try Monty's. The boat show was in town, and that was stunning to see. I was being very indecisive about what to eat, so I went with the fisherman's sampler. It was HUGE - soooo much fried seafood! I originally want the calamari, conch fritters, and coconut shrimp, but the standout was actually the cod. I would say this could feed at least six people with a salad too. My server disappeared for about half an hour after I was done, so I would say believe the reviews about the service. I'm sure there are better places than Monty's, but the view of marina can't be beat.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/aX_5JNeBEcaBjLSzWRZugA/60s.jpg" alt="acc-2">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Daria M. added 2 photos</p>
+                                <p class="txt-2">15 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-text-2">
+                            <p class="card-t-head">Peek A Treat</p>
+                            <div class="card-rate-2">
+                                <div class="star">
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,204,75,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,204,75,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                </div>
+                                <div class="star-count">1</div>
+                            </div>
+                            <span>Food Trucks,Ice Creams & Frozen Yogurt, Gluten-Free</span>
+                        </div>
+                        <div class="card-img2">
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/o8muDdS_R39NvwvC-N2t7w/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/NzjH2TLyY1nluaafyFL3zQ/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                        </div>
+                        <span class="show-all">Show all 11 photos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="	https://s3-media0.fl.yelpcdn.com/photo/Hcj10OK-rhJI6XMEKTCVPA/60s.jpg" alt="acc-2">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Bk K. added 4 photos</p>
+                                <p class="txt-2">40 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-text-2">
+                            <p class="card-t-head">Jon & Vinny's</p>
+                            <div class="card-rate-2">
+                                <div class="star">
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                </div>
+                                <div class="star-count">18</div>
+                            </div>
+                            <span>Italian, Pizza,Coffee & Tea</span>
+                        </div>
+                        <div class="card-img2">
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/q452GzkMK357QKXHy67nMg/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/NnHwbxLoeVu8Lg3OpHRCCg/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                        </div>
+                        <span class="show-all">Show all 11 photos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/Hcj10OK-rhJI6XMEKTCVPA/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Bk K.Wrote a Review</p>
+                                <p class="txt-2">42 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/TVHxyEVB_7NGX8rjY0eCdw/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">The Now Massage WynWood</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                my experience at the now massage was incredible every single time! let's start with the facility that is a dream very relaxing. I love the wave sound that puts you into the super relaxation mode and the staff always super happy to greet you. The therapist is amazing. always listening to you and your needs. I have a membership program with them, which I think is very good value. If you need to pause, they are having zero problems and always eager to help! 
+                                I have recommend so many friends to this place and everyone love them.  if you take self-care seriously like myself,  give this place a try.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/Hcj10OK-rhJI6XMEKTCVPA/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Bk K.Wrote a Review</p>
+                                <p class="txt-2">42 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/TVHxyEVB_7NGX8rjY0eCdw/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">The Now Massage WynWood</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                my experience at the now massage was incredible every single time! let's start with the facility that is a dream very relaxing. I love the wave sound that puts you into the super relaxation mode and the staff always super happy to greet you. The therapist is amazing. always listening to you and your needs. I have a membership program with them, which I think is very good value. If you need to pause, they are having zero problems and always eager to help! 
+                                I have recommend so many friends to this place and everyone love them.  if you take self-care seriously like myself,  give this place a try.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/s5hXvUFCY1IN9zkdo4X0Ug/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Alexandria T.Wrote a Review</p>
+                                <p class="txt-2">10 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/9cLxtaPxSAQyL-TizO4K4g/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">Monty's Sunset - South Beach</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                When I lived in Miami many years ago, we were on a budget and loved going yo happy hour. I remember ordering from raw bar and that their nachos were huge and filling. The sunset views on the marina were to die for!
+                                On a recent trip, I couldn't figure out where to go that wasn't too fancy but would have good food and decided to try Monty's. The boat show was in town, and that was stunning to see. I was being very indecisive about what to eat, so I went with the fisherman's sampler. It was HUGE - soooo much fried seafood! I originally want the calamari, conch fritters, and coconut shrimp, but the standout was actually the cod. I would say this could feed at least six people with a salad too. My server disappeared for about half an hour after I was done, so I would say believe the reviews about the service. I'm sure there are better places than Monty's, but the view of marina can't be beat.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/s5hXvUFCY1IN9zkdo4X0Ug/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Alexandria T.Wrote a Review</p>
+                                <p class="txt-2">10 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/9cLxtaPxSAQyL-TizO4K4g/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">Monty's Sunset - South Beach</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                When I lived in Miami many years ago, we were on a budget and loved going yo happy hour. I remember ordering from raw bar and that their nachos were huge and filling. The sunset views on the marina were to die for!
+                                On a recent trip, I couldn't figure out where to go that wasn't too fancy but would have good food and decided to try Monty's. The boat show was in town, and that was stunning to see. I was being very indecisive about what to eat, so I went with the fisherman's sampler. It was HUGE - soooo much fried seafood! I originally want the calamari, conch fritters, and coconut shrimp, but the standout was actually the cod. I would say this could feed at least six people with a salad too. My server disappeared for about half an hour after I was done, so I would say believe the reviews about the service. I'm sure there are better places than Monty's, but the view of marina can't be beat.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/aX_5JNeBEcaBjLSzWRZugA/60s.jpg" alt="acc-2">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Daria M. added 2 photos</p>
+                                <p class="txt-2">15 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-text-2">
+                            <p class="card-t-head">Peek A Treat</p>
+                            <div class="card-rate-2">
+                                <div class="star">
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,204,75,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,204,75,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                </div>
+                                <div class="star-count">1</div>
+                            </div>
+                            <span>Food Trucks,Ice Creams & Frozen Yogurt, Gluten-Free</span>
+                        </div>
+                        <div class="card-img2">
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/o8muDdS_R39NvwvC-N2t7w/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/NzjH2TLyY1nluaafyFL3zQ/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                        </div>
+                        <span class="show-all">Show all 11 photos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="	https://s3-media0.fl.yelpcdn.com/photo/Hcj10OK-rhJI6XMEKTCVPA/60s.jpg" alt="acc-2">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Bk K. added 4 photos</p>
+                                <p class="txt-2">40 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-bottom">
+                        <div class="card-text-2">
+                            <p class="card-t-head">Jon & Vinny's</p>
+                            <div class="card-rate-2">
+                                <div class="star">
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(255,100,61,1)" opacity="1" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                    <svg width="20" height="20" viewBox="0 0 20 20"><path fill="rgba(255,100,61,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H10V20H4C1.79086 20 0 18.2091 0 16V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M20 4C20 1.79086 18.2091 0 16 0H10V20H16C18.2091 20 20 18.2091 20 16V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M10 13.3736L12.5949 14.7111C12.7378 14.7848 12.9006 14.8106 13.0593 14.7847C13.4681 14.718 13.7454 14.3325 13.6787 13.9237L13.2085 11.0425L15.2824 8.98796C15.3967 8.8748 15.4715 8.72792 15.4959 8.569C15.5588 8.15958 15.2779 7.77672 14.8685 7.71384L11.983 7.2707L10.6699 4.66338C10.5975 4.51978 10.481 4.40322 10.3374 4.33089C9.96742 4.14458 9.51648 4.29344 9.33017 4.66338L8.01705 7.2707L5.13157 7.71384C4.97265 7.73825 4.82577 7.81309 4.71261 7.92731C4.42109 8.22158 4.42332 8.69645 4.71759 8.98796L6.79152 11.0425L6.32131 13.9237C6.29541 14.0824 6.3212 14.2452 6.39486 14.3881C6.58464 14.7563 7.03696 14.9009 7.40514 14.7111L10 13.3736Z"></path></svg>
+                                </div>
+                                <div class="star-count">18</div>
+                            </div>
+                            <span>Italian, Pizza,Coffee & Tea</span>
+                        </div>
+                        <div class="card-img2">
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/q452GzkMK357QKXHy67nMg/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                            <div class="card-img-con">
+                                <img src="https://s3-media0.fl.yelpcdn.com/bphoto/NnHwbxLoeVu8Lg3OpHRCCg/l.jpg" alt="card-2">
+                                <div class="like"><svg width="24" height="24" class="icon_svg"><path d="M22.35 9.13A3 3 0 0 0 20 8h-3V4.28A3.28 3.28 0 0 0 13.72 1a2 2 0 0 0-1.9 1.37L9.28 10H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h13.25c.21 0 5.11-.08 6.7-7.12l1-4.21a3 3 0 0 0-.6-2.54ZM3 12h6v9H3v-9Zm18-.77-1 4.2C18.78 20.85 15.38 21 15.25 21H11v-9.84L13.72 3c.707 0 1.28.573 1.28 1.28V9a1 1 0 0 0 1 1h4a1 1 0 0 1 .78.38 1 1 0 0 1 .22.85Z"></path></svg></div>
+                            </div>
+                        </div>
+                        <span class="show-all">Show all 11 photos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/Hcj10OK-rhJI6XMEKTCVPA/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Bk K.Wrote a Review</p>
+                                <p class="txt-2">42 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/TVHxyEVB_7NGX8rjY0eCdw/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">The Now Massage WynWood</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                my experience at the now massage was incredible every single time! let's start with the facility that is a dream very relaxing. I love the wave sound that puts you into the super relaxation mode and the staff always super happy to greet you. The therapist is amazing. always listening to you and your needs. I have a membership program with them, which I think is very good value. If you need to pause, they are having zero problems and always eager to help! 
+                                I have recommend so many friends to this place and everyone love them.  if you take self-care seriously like myself,  give this place a try.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/Hcj10OK-rhJI6XMEKTCVPA/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Bk K.Wrote a Review</p>
+                                <p class="txt-2">42 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/TVHxyEVB_7NGX8rjY0eCdw/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">The Now Massage WynWood</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                my experience at the now massage was incredible every single time! let's start with the facility that is a dream very relaxing. I love the wave sound that puts you into the super relaxation mode and the staff always super happy to greet you. The therapist is amazing. always listening to you and your needs. I have a membership program with them, which I think is very good value. If you need to pause, they are having zero problems and always eager to help! 
+                                I have recommend so many friends to this place and everyone love them.  if you take self-care seriously like myself,  give this place a try.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-top">
+                        <div class="card-acc">
+                            <img src="https://s3-media0.fl.yelpcdn.com/photo/s5hXvUFCY1IN9zkdo4X0Ug/60s.jpg" alt="acc-1">
+                            <div class="card-acc-txt">
+                                <p class="txt-1">Alexandria T.Wrote a Review</p>
+                                <p class="txt-2">10 minutes ago</p>
+                            </div>
+                        </div>
+                        <div class="acc-space"></div>
+                    </div>
+                    <div class="card-img">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/9cLxtaPxSAQyL-TizO4K4g/l.jpg" alt="card-1">
+                    </div>
+                    <div class="card-text">
+                        <p class="card-t-head">Monty's Sunset - South Beach</p>
+                        <div class="card-rate">
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(255,135,66,1)" opacity="1" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(255,135,66,1)" opacity="1" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M0 4C0 1.79086 1.79086 0 4 0H8V16H4C1.79086 16 0 14.2091 0 12V4Z"></path><path fill="rgba(200,201,202,0.48)" opacity="0.5" d="M16 4C16 1.79086 14.2091 0 12 0H8V16H12C14.2091 16 16 14.2091 16 12V4Z"></path><path fill="rgba(255,255,255,1)" fill-rule="evenodd" clip-rule="evenodd" d="M7.99999 10.6989L10.0759 11.7689C10.1902 11.8279 10.3205 11.8485 10.4474 11.8278C10.7745 11.7744 10.9963 11.466 10.943 11.139L10.5668 8.834L12.2259 7.19036C12.3173 7.09983 12.3772 6.98233 12.3967 6.85519C12.447 6.52766 12.2223 6.22137 11.8947 6.17106L9.58635 5.81655L8.53586 3.7307C8.478 3.61581 8.38475 3.52256 8.26987 3.46471C7.97391 3.31565 7.61316 3.43474 7.46411 3.7307L6.41362 5.81655L4.10524 6.17106C3.97809 6.19059 3.86059 6.25046 3.77006 6.34184C3.53685 6.57726 3.53863 6.95715 3.77405 7.19036L5.43319 8.834L5.05702 11.139C5.0363 11.2659 5.05693 11.3962 5.11587 11.5105C5.26769 11.805 5.62954 11.9207 5.92409 11.7689L7.99999 10.6989V10.6989Z"></path></svg>
+                        </div>
+                        <div class="card-t-para">
+                            <p>
+                                When I lived in Miami many years ago, we were on a budget and loved going yo happy hour. I remember ordering from raw bar and that their nachos were huge and filling. The sunset views on the marina were to die for!
+                                On a recent trip, I couldn't figure out where to go that wasn't too fancy but would have good food and decided to try Monty's. The boat show was in town, and that was stunning to see. I was being very indecisive about what to eat, so I went with the fisherman's sampler. It was HUGE - soooo much fried seafood! I originally want the calamari, conch fritters, and coconut shrimp, but the standout was actually the cod. I would say this could feed at least six people with a salad too. My server disappeared for about half an hour after I was done, so I would say believe the reviews about the service. I'm sure there are better places than Monty's, but the view of marina can't be beat.
+                            </p>
+                            <span>Read More</span>
+                        </div>
+                    </div>
+                    <div class="reaction-btn">
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_helpful_bulb_v2.yji-927d56e36e3a11c12e58.svg" alt="blub"><span id="span">Helpful</span></div>
+                        <div class="react-img"> <img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_thanks_v2.yji-1fec900fe14a2fa15c10.svg" alt="thanks"><span id="span">Thanks</span></div>
+                        <div class="react-img"><img src="https://s3-media0.fl.yelpcdn.com/assets/public/24x24_love_this_v2.yji-e4b17143e9d097f34029.svg" alt="like"><span id="span">Love this</span></div>
+                        <div class="react-img"> <img src="	https://s3-media0.fl.yelpcdn.com/assets/public/24x24_oh_no_v2.yji-d19e61e9dc84c2e954c1.svg" alt="emoji"><span id="span">Oh no</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="show-more">
+            <button>
+                <span><svg width="24" height="24" class="icon_svg"><path d="M12 15.25a1 1 0 0 1-.7-.29l-4.58-4.5A1.011 1.011 0 0 1 8.12 9L12 12.85 15.88 9a1 1 0 1 1 1.4 1.42L12.7 15a1 1 0 0 1-.7.25Z"></path></svg></span>
+                <div>Show more activity</div>
+            </button>
+        </div>
+    </section>
+    <section class="categories">
+        <h2>Categories</h2>
+        <div class="cat-item">
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/8bc05b287157/assets/img/svg_illustrations/40x40_food_v2.svg" alt="item1">
+                    <p>Restaurants</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/488aeb87ef6e/assets/img/svg_illustrations/40x40_gift_shops_v2.svg" alt="item2">
+                    <p>Shopping</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/1397897c21a5/assets/img/svg_illustrations/40x40_new_v2.svg" alt="item3">
+                    <p>Nightlife</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/0372f8e93aa9/assets/img/svg_illustrations/40x40_set_objective_v2.svg" alt="item4">
+                    <p>Active Life</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/5bd5d2648742/assets/img/svg_illustrations/40x40_barbers_v2.svg" alt="item5">
+                    <p>Beauty & Spas</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/5967f38fe621/assets/img/svg_illustrations/40x40_auto_v2.svg" alt="item6">
+                    <p>Automotive</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_design_cdn/7fc312973cf8/assets/img/svg_illustrations/40x40_home_services_v2.svg" alt="item7">
+                    <p>Home Services</p>
+                </div>
+            </div>
+            <div class="c-item">
+                <div class="item-inner">
+                    <img src="https://s3-media0.fl.yelpcdn.com/assets/public/40x40_more_v2.yji-961fdce2fd036f85fb01.svg" alt="item8">
+                    <p>More</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-content">
+            <div class="f-content" id="f-change1">
+                <div class="f-c-head">About</div>
+                <div class="f-c-list">
+                    <a href="#">About Yelp</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Press</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Trust & Safety</a>
+                    <a href="#">Content Guidelines</a>
+                    <a href="#">Accessibility Statement</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Ad Choices</a>
+                    <a href="#">Your Privacy Choices</a>
+                </div>
+            </div>
+            <div class="f-content" id>
+                <div class="f-c-head">Discover</div>
+                <div class="f-c-list">
+                    <a href="#">Yelp Project Cost Guides</a>
+                    <a href="#">Collections</a>
+                    <a href="#">Talk</a>
+                    <a href="#">Events</a>
+                    <a href="#">Yelp Blog</a>
+                    <a href="#">Support</a>
+                    <a href="#">Yelp Mobile</a>
+                    <a href="#">Developers</a>
+                    <a href="#">RSS</a>
+                </div>
+            </div>
+            <div class="f-content">
+                <div class="f-c-head">Yelp for Business</div>
+                <div class="f-c-list">
+                    <a href="#">Yelp for Business</a>
+                    <a href="#">Business Owner Login</a>
+                    <a href="#">Claim your Business Page</a>
+                    <a href="#">Advertise on Yelp</a>
+                    <a href="#">Yelp for Restaurant Owners</a>
+                    <a href="#">Table Management</a>
+                    <a href="#">Business Success Stories</a>
+                    <a href="#">Business Support</a>
+                    <a href="#">Yelp Blog for Business</a>
+                    <a href="#">Yelp Data for B2B</a>
+                    <a href="#">Yelp Data for B2C</a>
+                </div>
+            </div>
+            <div class="lan-cit-con">
+                <div class="lan-cit">
+                    <span>Languages</span>
+                    <div class="l-name">
+                        <span style="margin-right: 4px;">English</span>
+                        <span ><a href="#"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></a></span>
+                    </div>
+                </div>
+                <div class="lan-cit" id="city">
+                    <span>Cities</span>
+                    <div class="l-name">
+                        <span style="margin-right: 4px;">Explore a City</span>
+                        <span ><a href="#"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lan-cit-main">
+            <div class="lan-cit-con">
+                <div class="lan-cit">
+                    <span>Languages</span>
+                    <div class="l-name">
+                        <span style="margin-right: 4px;">English</span>
+                        <span ><a href="#"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></a></span>
+                    </div>
+                </div>
+                <div class="lan-cit" id="city">
+                    <span>Cities</span>
+                    <div class="l-name">
+                        <span style="margin-right: 4px;">Explore a City</span>
+                        <span ><a href="#"><svg width="16" height="16" class="icon_svg"><path d="M8 10.25a.746.746 0 0 1-.525-.215l-3.055-3a.75.75 0 0 1 1.05-1.07L8 8.449l2.53-2.484a.75.75 0 0 1 1.05 1.07l-3.055 3A.746.746 0 0 1 8 10.25Z"></path></svg></a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add">
+            <div class="add-space"></div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2004–2025 Yelp Inc. Yelp, Elite Squad,
+                <img src="assets/f-1.svg" alt="f-1-img" id="f-1-img">,
+                <img src="assets/f-2.svg" alt="f-2-img" id="f-2-img">
+                and related marks are registered trademarks of Yelp. </p>
+        </div>
+      </div>
+      </footer> 
+   </div>
 </body>
 </html>
