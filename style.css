@@ -1023,6 +1023,7 @@ footer{
     padding: 16px 16px 16px 16px;
     display: flex;
     gap: 4px;
+    position: relative;
  }
 .header-nav p{
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -1040,6 +1041,11 @@ footer{
     height: 24px;
     fill: #fff;
     margin-top: -1px;
+}
+.menu{
+    display: none;
+    position: absolute;
+    bottom: 0;
 }
  /* header  end*/
  /* home body */
@@ -1598,4 +1604,13 @@ footer{
 }
 .like svg:hover{
     background-color: rgba(240, 240, 240, 1);
+}
+.header-nav:hover .menu{
+    display: block;
+}
+.show-all:hover{
+    text-decoration: underline;
+}
+.card-t-para span:hover{
+    text-decoration: underline;
 }
