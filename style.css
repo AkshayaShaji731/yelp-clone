@@ -768,7 +768,7 @@ footer{
     width: 38px;
     height: 19px;
     aspect-ratio:auto 34/19;
-    padding-top: 1px;
+    /* padding-top: 1px; */
     vertical-align: bottom;
 }
 #f-2-img{
@@ -776,7 +776,7 @@ footer{
     height: 16px;
     aspect-ratio:auto 14/16;
     padding-top: 1px;
-    padding-right: 1px;
+    padding-right:1px;
     vertical-align:top;
 }
 
@@ -790,9 +790,20 @@ footer{
     .service-conatiner{
         margin-bottom: 5px;
     }
-    
+    .copyright p {
+        padding-right: 7px;
+    }
+    .about ul li{
+        padding-bottom: 2px;
+    }
+    .add{
+        margin-top: 22px;
+    }
 }
 @media screen and (min-width:768px){
+    .input-label{
+        display: none;
+    }
     .rate{
         padding-bottom: 12px;
     }
@@ -823,7 +834,7 @@ footer{
         display:grid;
     }
     .copyright{
-        margin-top: 27px;
+        margin-top: 32px;
     }
     .add-space{
         margin-top: 48px;
@@ -1011,7 +1022,7 @@ footer{
     padding: 11px 18px 9px;
  }
  #btn-2{
-    background-color: rgba(255, 22, 22, 0.75);
+    background-color: rgba(215, 22, 22, 1);
  }
  .header-bottom{
     display: flex;
@@ -1043,9 +1054,9 @@ footer{
     margin-top: -1px;
 }
 .menu{
-    display: none;
-    position: absolute;
-    bottom: 0;
+    display: block;
+    /* position: absolute;
+    bottom: 0; */
 }
  /* header  end*/
  /* home body */
@@ -1193,6 +1204,7 @@ footer{
     line-height: 36px;
     letter-spacing: -0.4px;
     margin: 0px 0 0 0;
+    color: rgba(45, 46, 47, 1);
  }
  .card-container{
     display: grid;
@@ -1523,12 +1535,6 @@ footer{
     .desktop{
         display: block;
     }
-    .copyright{
-        margin-top: 31px;
-    }
-    #f-2-img {
-        padding-top: 2px;
-    }
 }
 @media screen and (min-width:1440px) {
     .s-input input{
@@ -1538,9 +1544,11 @@ footer{
         width:  calc(((100vw - 1144px) / 2) - 80px - 8px);
     }
     .header-bottom{
+        margin-top: 1px;
         margin-left: max(calc(((100vw - 1144px) / 2) - 80px - 8px), 80px);;
     }
     .home-body{
+        padding-top: 42px;
         padding-inline: 40px;
         max-width: 1144px;
         margin-inline: auto;
@@ -1613,4 +1621,9 @@ footer{
 }
 .card-t-para span:hover{
     text-decoration: underline;
+}
+.play-btn span svg:hover{
+    border-radius: 50%;
+    padding: 4px;
+    background-color: rgba(255, 255, 255, 0.32);
 }
